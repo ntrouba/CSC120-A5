@@ -15,10 +15,32 @@ public class Banner {
     }
 
     /*
-     * TODO: Modify this method to print a decorative banner, resized to fit the message
+     * Modify this method to print a decorative banner, resized to fit the message
      */
     public void display() {
-        System.out.println(this.message);
+    /*
+     * Establishes and prints a decorative banner
+     * @param counter
+     * @return
+     */
+       // System.out.println(this.message);
+        int counter = 0;
+        while (counter < this.message.length()){
+            System.out.print("$*");
+            counter++;
+        }
+        System.out.println();
+        System.out.println("<3**"+this.message+"**<3");
+        counter = 0;
+        while (counter < this.message.length()){
+            System.out.print("*$");
+            
+            
+    
+            counter++;
+            
+        }
+        System.out.println();
     }
 
     /* main method (for testing) */

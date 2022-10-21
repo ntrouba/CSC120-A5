@@ -7,10 +7,17 @@
 public class Pants {
 
     /*
-     * TODO: Modify this method to print ASCII Art Pants
+     * Prints ASCII art depicting pants to the console
      */
     public void display() {
-        System.out.println("Pants?);
+        System.out.println("        |   | \\/  |  |"); //line 32
+        System.out.println("        |__/  ||  \\__|");
+        System.out.println("        |     ||     |");
+        System.out.println("        |     ||     |");
+        System.out.println("        |     ||     |");
+        System.out.println("        |     ||     |");
+        System.out.println("        |     ||     |");
+        System.out.println("        |_____||_____|");
     }
 
     /* main method (for testing) */

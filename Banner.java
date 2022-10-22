@@ -20,8 +20,6 @@ public class Banner {
     public void display() {
     /*
      * Establishes and prints a decorative banner
-     * @param counter
-     * @return
      */
        // System.out.println(this.message);
         int counter = 0;
@@ -35,7 +33,6 @@ public class Banner {
         while (counter < this.message.length()){
             System.out.print("*$");
             
-            
     
             counter++;
             
@@ -45,7 +42,12 @@ public class Banner {
 
     /* main method (for testing) */
     public static void main(String[] args) {
-        Banner myBanner = new Banner("Hello world");
+    /*
+     * Displays banner
+     * @param args
+     * @return myBanner
+     */
+        Banner myBanner = new Banner("girls");
         myBanner.display();
     }
 }

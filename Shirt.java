@@ -5,6 +5,9 @@
  * @version 13 October 2022
  */
 public class Shirt {
+/*
+ * Class for shirt
+ */
 
     /*
      *Modify this method to print ASCII Art Shirt
@@ -25,6 +28,11 @@ public class Shirt {
 
     /* main method (for testing) */
     public static void main(String[] args) {
+    /*
+     * Displays shirt
+     * @param args
+     * @return myShirt
+     */
         Shirt myShirt = new Shirt();
         myShirt.display();
     }

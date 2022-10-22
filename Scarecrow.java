@@ -6,6 +6,9 @@
  */
 
 class Scarecrow {
+/*
+ * Class for scarecrow
+ */
 
     /* Parts of the Scarecrow
      * Uncomment remaining parts as you implement each class
@@ -16,16 +19,15 @@ class Scarecrow {
     private Boot leftFoot;
     private Boot rightFoot;
     private Banner sign;
-    private String message;
+   
 
     /* Constructor
      * initialize remaining parts
      */
-    public Scarecrow(Pumpkin h, Shirt s, Pants p, Boot l, Boot r, Banner b, String m) {
+    public Scarecrow(Pumpkin h, Shirt s, Pants p, Boot l, Boot r, Banner b) {
     /**
      * Initializes the scarecrow
-     * @param
-     * @return
+     * @param h,s,p,l,r,b
      */
         head = h;
         body = s;
@@ -33,7 +35,7 @@ class Scarecrow {
         leftFoot = l;
         rightFoot= r;
         sign = b;
-        message = m;
+        
         
 
 
@@ -46,11 +48,9 @@ class Scarecrow {
     */
     public void display() {
     /*Displays the scarecrow
-     * @param
-     * @return
      */
 
-
+            
         sign.display();
         head.display();
         body.display();
@@ -64,18 +64,23 @@ class Scarecrow {
 
     /* Main method (for testing) */
     public static void main(String[] args) {
+    /*
+     * Displays scarecrow and determines banner
+     * @param String
+     * @return myScarecrow
+     */
 
         
-        Scarecrow myScarecrow = new Scarecrow(new Pumpkin(), new Shirt(), new Pants(), new Boot("left"), new Boot("right"), new Banner("meow"), new String());
+        Scarecrow myScarecrow = new Scarecrow(new Pumpkin(), new Shirt(), new Pants(), new Boot("left"), new Boot("right"), new Banner(""));
 
         // If a message was passed in on the command line, extract and store it
         //  in Step 4, you'll pass this value along to your Banner constructor
         
         if (args.length > 0) {
-             myScarecrow.message = args[0];
+             myScarecrow.sign = new Banner (args[0]);
          }
          else{
-            myScarecrow.message = "Slay";
+            myScarecrow.sign = new Banner("Have a spooky day!");
          }
 
         myScarecrow.display();

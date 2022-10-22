@@ -32,7 +32,7 @@ Listed below are various aspects of the assignment.  When you turn in your work,
 
 **YES** 1 pt: The `Banner` class resizes its display to fit the supplied message
 
-**YES** 1 pt: The message supplied to the `Banner` constructor is passed in via the command line
+**PART** 1 pt: The message supplied to the `Banner` constructor is passed in via the command line
 
 **YES** 1 pt: The program displays a default message if none is supplied.
 

@@ -5,6 +5,9 @@
  * @version 13 October 2022
  */
 public class Boot {
+  /*
+   * Class for boot
+   */
   
     private String direction;
   
@@ -17,6 +20,9 @@ public class Boot {
      * Modify this method to print ASCII Art Boot
      */
     public void display() {
+    /*
+     * Left boot and right boot display
+     */
         if (this.direction.equals("left")) {
           //System.out.println("Left boot?");
           System.out.print("       |______|");
@@ -30,6 +36,11 @@ public class Boot {
 
     /* main method (for testing) */
     public static void main(String[] args) {
+    /*
+     * Displays the left and right boot
+     * @param args
+     * @return myLeftBoot, myRightBoot
+     */
         Boot myLeftBoot = new Boot("left");
         Boot myRightBoot = new Boot("right");
         myLeftBoot.display();

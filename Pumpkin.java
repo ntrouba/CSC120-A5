@@ -25,6 +25,11 @@ public class Pumpkin {
     
     /* main method (for testing) */
     public static void main(String[] args) {
+    /*
+     * Displays pumpkin
+     * @param args
+     * @return myPumpkin
+     */
         Pumpkin myPumpkin = new Pumpkin();
         myPumpkin.display();
     }
